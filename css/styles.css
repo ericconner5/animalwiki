@@ -1,0 +1,13 @@
+.Turtles, .Snakes, .Insects {
+  display: none;
+}
+
+.container {
+  padding: 4%;
+}
+
+img {
+  width: 20%;
+  max-width: 20%;
+  float: right;
+}
