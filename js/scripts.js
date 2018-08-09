@@ -2,7 +2,12 @@ $(function() {
   $("form#selector").submit(function(event) {
     event.preventDefault();
     var input = $("select#animalSelector").val();
-    if (input === "Turtles"){
+    if (input === "Insects") {
+      $('.Insects').show();
+      $('.Turtles').hide();
+      $('.Snakes').hide();
+    }
+    else if (input === "Turtles"){
       $('.Turtles').show();
       $('.Snakes').hide();
       $('.Insects').hide();
@@ -11,10 +16,11 @@ $(function() {
       $('.Turtles').hide();
       $('.Insects').hide();
     } else {
-      $('.Insects').show();
+      alert('Please select an animal');
+      $('.Insects').hide();
       $('.Turtles').hide();
       $('.Snakes').hide();
-    }
 
+    }
   });
 });
